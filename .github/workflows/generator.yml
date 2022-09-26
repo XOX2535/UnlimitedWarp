@@ -1,4 +1,4 @@
-name: CI
+name: WARP GENERATOR
 
 on: workflow_dispatch
 

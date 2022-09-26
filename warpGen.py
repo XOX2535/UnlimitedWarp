@@ -58,6 +58,7 @@ if len(argv) == 1:
 
         except KeyboardInterrupt:
             print (Fore.Red + "Stopped ! ")
+            break
 
 else:
     print ("Warp Plus Unlimited Script ! ")
