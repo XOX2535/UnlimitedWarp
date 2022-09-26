@@ -16,6 +16,7 @@ jobs:
         run: |
           pip install -r requirements.txt
           echo "WARP = '{{ secrets.WARP_ID }}'" > warpID.py
+          ping google.com -c 5
 
       - name: Generator
         run: |
