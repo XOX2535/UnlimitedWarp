@@ -64,9 +64,15 @@ else:
     print ("Warp Plus Unlimited Script ! ")
     print ("Created By Maximum Radikali")
     print ("Channel : @BlackFoxSecurityTeam")
-    code_id = argv[2]
-
-    while True:
-        warp_unlimited(code_id)
-        print ("Success ! You Got 1GB Warp + \n" + "Please Wait 17 Second !")        
-        time.sleep(17)
+    
+    if argv[1] == "github":
+        import warpID
+        while True:
+            warp_unlimited(warpID.WARP)
+            print ("Success ! You Got 1GB Warp + \n" + "Please Wait 17 Second !")        
+            time.sleep(17)
+    else:
+        while True:
+            warp_unlimited(argv[1])
+            print ("Success ! You Got 1GB Warp + \n" + "Please Wait 17 Second !")        
+            time.sleep(17)

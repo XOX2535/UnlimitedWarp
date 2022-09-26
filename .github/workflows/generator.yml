@@ -15,4 +15,5 @@ jobs:
       - name: Generator
         run: |
           pip install -r requirements.txt
-          python warpGen.py {{ secrets.WARP_ID }}
+          echo "WARP = '{{ secrets.WARP_ID }}'" > warpID.py
+          python warpGen.py github
