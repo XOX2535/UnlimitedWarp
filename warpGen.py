@@ -5,6 +5,9 @@ import time , requests , random , string
 import urllib
 from sys import argv
 
+# Starting Hint
+print("Starting...")
+
 # Generate a random number
 def rand_number():
     return str(random.randint(1,999))
@@ -38,7 +41,8 @@ def warp_unlimited(id_code):
     except urllib.error.HTTPError:
         time.sleep(5)
 
-print("Starting...")
+# CLI Hint
+print("Initiating...")
 
 # CLI
 if len(argv) == 1:
