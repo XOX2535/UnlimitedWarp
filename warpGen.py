@@ -38,6 +38,8 @@ def warp_unlimited(id_code):
     except urllib.error.HTTPError:
         time.sleep(5)
 
+print("Starting...")
+
 # CLI
 if len(argv) == 1:
     from pyfiglet import Figlet
