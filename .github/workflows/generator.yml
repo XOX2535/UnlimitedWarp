@@ -12,8 +12,11 @@ jobs:
           python-version: '3.x' # Version range or exact version of a Python version to use, using SemVer's version range syntax
           architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
 
-      - name: Generator
+      - name: Setup
         run: |
           pip install -r requirements.txt
           echo "WARP = '{{ secrets.WARP_ID }}'" > warpID.py
+
+      - name: Generator
+        run: |
           python warpGen.py github
