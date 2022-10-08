@@ -53,11 +53,11 @@ if len(argv) == 1:
     while True:
         try:
             warp_unlimited(code_id)
-            print ( Fore.GREEN + "Success ! You Got 1GB Warp + \n" + Fore.MAGENTA + "Please Wait 17 Second !")        
+            print ( Fore.GREEN + "Success! You Got 1GB Warp+ \n" + Fore.MAGENTA + "Waiting...")        
             time.sleep(17)
 
         except KeyboardInterrupt:
-            print (Fore.Red + "Stopped ! ")
+            print (Fore.Red + "Stopped! ")
             break
 
 else:
@@ -69,10 +69,10 @@ else:
         import warpID
         while True:
             warp_unlimited(warpID.WARP)
-            print ("Success ! You Got 1GB Warp + \n" + "Please Wait 17 Second !")        
+            print ("Success! You Got 1GB Warp+ \n" + "Waiting...")        
             time.sleep(17)
     else:
         while True:
             warp_unlimited(argv[1])
-            print ("Success ! You Got 1GB Warp + \n" + "Please Wait 17 Second !")        
+            print ("Success! You Got 1GB Warp+ \n" + "Waiting...")        
             time.sleep(17)
